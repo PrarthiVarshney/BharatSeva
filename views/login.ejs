@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <center style="    background-color:#521d1d;
+padding: 20px 20px;    ">
+        <h1 class="heading">Login</h1>
+    </center>
+
+
+    <form action="/login" method="POST">
+        <center>
+            <div class="container">
+                <p><b>Please select one of the following choices:</b></p>
+                <input type="radio" name="personType" value="ve" required> Vendor
+                <input type="radio" name="personType" value="d" required> Donator
+                <input type="radio" name="personType" value="vi" required> Victim
+                <br><br><br>
+
+                <label for="email" class="pad"><b>E-mail:</b></label>
+                <br>
+                <input class="login" type="email" placeholder="Enter Email" name="email" required>
+                <br>
+
+                <label for="password" class="passwordpad"><b>Password:</b></label>
+                <br>
+                <input class="login" type="password" placeholder="Enter Password" name="password" required>
+                <br>
+
+                <button type="submit">Login</button>
+            </div>
+        </center>
+    </form>
+
+    <form action="/home" method="GET">
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="submit" class="backbtn">Back</button>
+        </div>
+    </form>
+</body>
+
+</html>
